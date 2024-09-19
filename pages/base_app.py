@@ -1,7 +1,7 @@
-from utilits.words import URL
-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+from utilits.words import URL
 
 
 class BasePage:

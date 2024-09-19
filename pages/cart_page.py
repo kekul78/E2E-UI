@@ -1,7 +1,7 @@
-from pages.base_app import BasePage
-
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+
+from pages.base_app import BasePage
 
 
 class CartPage(BasePage):
