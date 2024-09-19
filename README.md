@@ -10,7 +10,7 @@ Dev
      ├── pages
      │   ├── base_app.py                   <- Файл с базовыми методами для работы с WebDriver
      │   ├── cart_page.py                  <- Файл с методами для работы с WebDriver в корзине
-     │   ├── checkout_complete_page.py     <- Файл с методами для работы с WebDriver на странице подтверждения кспешной покупки
+     │   ├── checkout_complete_page.py     <- Файл с методами для работы с WebDriver на странице подтверждения успешной покупки
      │   ├── login_page.py                 <- Файл с методами для работы с WebDriver на странице авторизации
      │   └── select_product_page.py        <- Файл с методами для работы с WebDriver на странице выбора продукта
      ├── tests
