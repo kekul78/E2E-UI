@@ -10,23 +10,12 @@ class LoginPage(BasePage):
         self.locator_login_button = (By.ID, "login-button")
 
     def click_on_the_auth_button(self):
-        search_filed = self.find_element(
-            self.locator_login_button, time=2
-        )
-        search_filed.click()
+        self.click_button(self.locator_login_button)
 
     def enter_username(self, word):
-        search_field = self.find_element(
-            self.locator_login_username
-        )
-        search_field.click()
+        search_field = self.click_button(self.locator_login_username)
         search_field.send_keys(word)
-        return search_field
 
     def enter_password(self, word):
-        search_field = self.find_element(
-            self.locator_login_password
-        )
-        search_field.click()
+        search_field = self.click_button(self.locator_login_password)
         search_field.send_keys(word)
-        return search_field

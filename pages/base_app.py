@@ -1,3 +1,5 @@
+from utilits.words import URL
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -6,7 +8,7 @@ class BasePage:
 
     def __init__(self, driver):
         self.driver = driver
-        self.base_url = "https://www.saucedemo.com/"
+        self.base_url = URL.SAUCEDEMO
 
     def find_element(self, locator, time=10):
         element = WebDriverWait(self.driver, time).until(
@@ -22,3 +24,8 @@ class BasePage:
     def scroll_to_element(self, element):
         self.driver.execute_script("arguments[0].scrollIntoView(true);",
                                    element)
+
+    def click_button(self, locator):
+        search_filed = self.find_element(locator, time=2)
+        search_filed.click()
+        return search_filed
